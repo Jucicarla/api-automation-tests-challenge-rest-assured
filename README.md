@@ -4,21 +4,26 @@ Professora: Carolina Louzada - Explorando o Rest Assured Para a Automação de T
 
 Pré-requisitos:
 
-• Fundamentos de qualidade de software
-• Fundamento de programação -> JAVA
-• Fundamentos de automação
-• Testes de API
+◆ Fundamentos de qualidade de software
 
-Parte 1 - Conhecendo a API - Obrigatório
+◆ Fundamento de programação -> JAVA
+
+◆ Fundamentos de automação
+
+◆ Testes de API
+
+# Parte 1 - Conhecendo a API - Obrigatório
 
 - A base para qualquer teste automatizado é o teste manual, portanto exploraremos a API
 primeiramente no Postman.
   TO DO:
-  ◆ Você deverá fazer sua collection usando a API Restful-booker.
-  ◆ Você deverá exportar a collection.
-  ◆ Você deverá subir sua collection no repositório.
-- 
-PArte 2 - Automatizando com Rest Assured -
+◆ Você deverá fazer sua collection usando a API Restful-booker.
+
+◆ Você deverá exportar a collection.
+
+◆ Você deverá subir sua collection no repositório.
+
+# Parte 2 - Automatizando com Rest Assured -
 
 * API a ser usada como base : Restful-booker
 
