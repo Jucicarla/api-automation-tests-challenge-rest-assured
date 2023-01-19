@@ -11,6 +11,9 @@ import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import org.junit.jupiter.api.*;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import static io.restassured.RestAssured.given;
 import static io.restassured.config.LogConfig.logConfig;
 import static io.restassured.module.jsv.JsonSchemaValidator.*;
@@ -96,6 +99,49 @@ public class BookingTests {
 
 
 
+    }
+
+    @Test
+    public void CreateToken_returnOk(){
+        Map<String, String> body = new HashMap<>();
+        body.put("username", "admin");
+        body.put("password", "password123");
+
+        request
+                .when()
+                .body(body)
+                .post("/auth")
+                .then()
+                .assertThat()
+                .statusCode(200);
+    }
+
+    @Test
+    public void  getAllBookingsByTotalPrice_returnOk(){
+        request
+                .when()
+                .queryParam("totalprice", 1000)
+                .get("/booking")
+                .then()
+                .assertThat()
+                .statusCode(200)
+                .contentType(ContentType.JSON)
+                .and()
+                .body("results", hasSize(greaterThan(0)))
+        ;
+    }
+
+    @Test
+    public void HealthCheck(){
+        Response response = request
+                .when()
+                .get("/ping")
+                .then()
+                .extract().
+                response()
+                ;
+
+        Assertions.assertEquals(201, response.statusCode());
     }
 
 }
