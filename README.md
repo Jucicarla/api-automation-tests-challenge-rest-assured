@@ -6,7 +6,7 @@ Pré-requisitos:
 
 ◆ Fundamentos de qualidade de software
 
-◆ Fundamento de programação -> JAVA
+◆ Fundamento de programação ->  JAVA
 
 ◆ Fundamentos de automação
 
