@@ -12,11 +12,13 @@ Pré-requisitos:
 
 ◆ Testes de API
 
-# Parte 1 - Conhecendo a API - Obrigatório
+# Parte 1 - Conhecendo a API -
 
-- A base para qualquer teste automatizado é o teste manual, portanto exploraremos a API
+A base para qualquer teste automatizado é o teste manual, portanto exploraremos a API
 primeiramente no Postman.
-  TO DO:
+  
+TO DO:
+
 ◆ Você deverá fazer sua collection usando a API Restful-booker.
 
 ◆ Você deverá exportar a collection.
